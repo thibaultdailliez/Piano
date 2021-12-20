@@ -3,6 +3,7 @@
  * Vous verrez ça plus tard en détail avec Rémi, pour l'instant on n'a pas trop besoin de savoir à quoi ça sert.
  */
 class Tableau1 extends Phaser.Scene{
+    bgAnimationA;
     /**
      * Précharge les assets
      */
@@ -93,7 +94,7 @@ class Tableau1 extends Phaser.Scene{
         this.bg1Container.add(bg1Terrain3);
 
 
-        // arbre
+        // arbre statique
         let arbreMort1_1=this.add.image(85,160, 'arbreMort1').setOrigin(0,0);
         arbreMort1_1.scale=0.5
         let arbreMort1_2=this.add.image(415,120, 'arbreMort1').setOrigin(0,0);
@@ -151,13 +152,13 @@ class Tableau1 extends Phaser.Scene{
 
 
 
-        //maison
+        //maison statique
 
         let neigeMaison=this.add.image(135,-3, 'neigeMaison').setOrigin(0,0);
         neigeMaison.scale=0.6
 
 
-        // pierre
+        // pierre statique
         let caillou1_1=this.add.image(120,100, 'caillou1').setOrigin(0,0);
         caillou1_1.scale=0.5
         let caillou1_2=this.add.image(115,110, 'caillou1').setOrigin(0,0);
@@ -272,7 +273,9 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1 // -1 correspond a l'infini
         });
         this.filterNeige.play('snow');
-        this.filterNeige.visible=false;
+
+        this.bgAnimationA.scrollFactorX=0;
+        this.filterNeige.alpha=0;
         this.filterFilm.scrollFactorX=0;
         this.bg2Container.scrollFactorX=0.2;
         this.bg1Container.scrollFactorX=0.4;
@@ -289,10 +292,10 @@ class Tableau1 extends Phaser.Scene{
            {
                case Phaser.Input.Keyboard.KeyCodes.I:
 
-                   if (me.filterNeige.visible === true) {
-                       me.filterNeige.setVisible(false)
+                   if (me.filterNeige.alpha === 0) {
+                       me.filterNeige.setAlpha(1)
                    } else {
-                       me.filterNeige.setVisible(true)
+                       me.filterNeige.setAlpha(0)
                    }
                    break;
            }
