@@ -286,7 +286,7 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1 // -1 correspond a l'infini
         });
         this.filterNeige.play('snow');
-        this.filterNeige.visible=false;
+
         this.filterFilm.scrollFactorX=0;
         this.bg2Container.scrollFactorX=0.2;
         this.bg1Container.scrollFactorX=0.4;
@@ -342,14 +342,144 @@ class Tableau1 extends Phaser.Scene{
        {
            switch (kevent.keyCode)
            {
-               case Phaser.Input.Keyboard.KeyCodes.I:
+               case Phaser.Input.Keyboard.KeyCodes.A:
 
-                   if (me.filterNeige.visible === true) {
-                       me.filterNeige.setVisible(false)
+                   if (me.filterNeige.alpha === 0) {
+                       me.filterNeige.setAlpha(1)
                    } else {
-                       me.filterNeige.setVisible(true)
+                       me.filterNeige.setAlpha(0)
                    }
                    break;
+
+               case Phaser.Input.Keyboard.KeyCodes.Z:
+
+                   if (me.neigeMaison.alpha === 0) {
+                       me.neigeMaison.setAlpha(1)
+                   } else {
+                       me.neigeMaison.setAlpha(0)
+                   }
+                   break;
+
+               case Phaser.Input.Keyboard.KeyCodes.E:
+
+                   if (me.neige6_1.alpha === 0) {
+                       me.neige6_1.setAlpha(1)
+                       me.neige6_2.setAlpha(1)
+                   } else {
+                       me.neige6_1.setAlpha(0)
+                       me.neige6_2.setAlpha(0)
+                   }
+                   break;
+
+               case Phaser.Input.Keyboard.KeyCodes.R:
+
+                   if (me.neige3_1.alpha === 0) {
+                       me.neige3_1.setAlpha(1)
+                       me.neige3_2.setAlpha(1)
+                       me.neige3_3.setAlpha(1)
+                   } else {
+                       me.neige3_1.setAlpha(0)
+                       me.neige3_2.setAlpha(0)
+                       me.neige3_3.setAlpha(0)
+                   }
+                   break;
+
+               case Phaser.Input.Keyboard.KeyCodes.T:
+
+                   if (me.neige4_1.alpha === 0) {
+                       me.neige4_1.setAlpha(1)
+                       me.neige4_2.setAlpha(1)
+                       me.neige4_3.setAlpha(1)
+                   } else {
+                       me.neige4_1.setAlpha(0)
+                       me.neige4_2.setAlpha(0)
+                       me.neige4_3.setAlpha(0)
+                   }
+                   break;
+
+               case Phaser.Input.Keyboard.KeyCodes.Y:
+
+                   if (me.neige5_1.alpha === 0) {
+                       me.neige5_1.setAlpha(1)
+                       me.neige5_2.setAlpha(1)
+                       me.neige5_3.setAlpha(1)
+                   } else {
+                       me.neige5_1.setAlpha(0)
+                       me.neige5_2.setAlpha(0)
+                       me.neige5_3.setAlpha(0)
+                   }
+                   break;
+
+               case Phaser.Input.Keyboard.KeyCodes.U:
+
+                   if (me.neige1_1.alpha === 0) {
+                       me.neige1_1.setAlpha(1)
+                       me.neige1_2.setAlpha(1)
+                       me.neige1_3.setAlpha(1)
+                   } else {
+                       me.neige1_1.setAlpha(0)
+                       me.neige1_2.setAlpha(0)
+                       me.neige1_3.setAlpha(0)
+                   }
+                   break;
+               case Phaser.Input.Keyboard.KeyCodes.I:
+                   if (me.neige2_1.alpha === 0) {
+                       me.neige2_1.setAlpha(1)
+                       me.neige2_2.setAlpha(1)
+                       me.neige2_3.setAlpha(1)
+                   } else {
+                       me.neige2_1.setAlpha(0)
+                       me.neige2_2.setAlpha(0)
+                       me.neige2_3.setAlpha(0)
+                   }
+                   break;
+
+               // Pierre + neige
+
+               case Phaser.Input.Keyboard.KeyCodes.Q:
+
+                   if (me.caillou2_1.alpha === 0) {
+                       me.caillou2_1.setAlpha(1)
+                       me.caillou3_1.setAlpha(1)
+                   } else {
+                       me.caillou2_1.setAlpha(0)
+                       me.caillou3_1.setAlpha(0)
+                   }
+                   break;
+
+               case Phaser.Input.Keyboard.KeyCodes.S:
+
+                   if (me.caillou2_2.alpha === 0) {
+                       me.caillou2_2.setAlpha(1)
+                       me.caillou3_2.setAlpha(1)
+                   } else {
+                       me.caillou2_2.setAlpha(0)
+                       me.caillou3_2.setAlpha(0)
+                   }
+                   break;
+
+               case Phaser.Input.Keyboard.KeyCodes.D:
+
+                   if (me.caillou2_3.alpha === 0) {
+                       me.caillou2_3.setAlpha(1)
+                       me.caillou3_3.setAlpha(1)
+                   } else {
+                       me.caillou2_3.setAlpha(0)
+                       me.caillou3_3.setAlpha(0)
+                   }
+                   break;
+
+               case Phaser.Input.Keyboard.KeyCodes.F:
+
+                   if (me.caillou2_4.alpha === 0) {
+                       me.caillou2_4.setAlpha(1)
+                       me.caillou3_4.setAlpha(1)
+                   } else {
+                       me.caillou2_4.setAlpha(0)
+                       me.caillou3_4.setAlpha(0)
+                   }
+                   break;
+
            }
 
        });
@@ -366,8 +496,7 @@ class Tableau1 extends Phaser.Scene{
      */
     update(){
 
-        //déplacement de la caméra
-        this.cameras.main.scrollX+=this.speed; // on aurait pu écrire : this.cameras.main.scrollX= this.cameras.main.scrollX + this.speed;
+
 
         //petit effet de vibrance sur le filtre film au tout premier plan
         this.filterFilm.setAlpha(Phaser.Math.Between(95,100)/100)
