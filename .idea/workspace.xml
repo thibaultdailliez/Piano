@@ -2,130 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="6d6482fb-021a-4a3f-bbd4-e4d5c9c50e21" name="Changes" comment="azerzer">
-      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/halloween-master.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/fond.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/00-preview-example/sample1.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/00-preview-example/sample2.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/00-preview-example/sample3.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/00-preview-example/sample4.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/00-preview-example/wealther-preview.gif" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-big-stone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-box-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-box-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-fellen-tree-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-fellen-tree-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-grass-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-grass-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-grass-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-grass-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-mushroom-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-mushroom-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-stone-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-stone-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-stone-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-stone-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-stone-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-terrain-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-terrain-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-terrain-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-terrain-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-tree-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-tree-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-tree-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-1/bg-wooden-bridge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg-animation/bg-animation-a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg-animation/bg-animation-b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg-animation/bg-animation-c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg2-terrain-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg2-terrain-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg2-terrain-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg2-terrain-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg2-tree-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg2-tree-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/background-2/bg2-tree-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/filters/bloody/frame1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/filters/bloody/frame2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/filters/bloody/frame3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/filters/film/frame-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/filters/film/frame-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/filters/film/frame-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-big-stone.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-box-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-box-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-fellen-tree-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-fellen-tree-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-grass-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-grass-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-grass-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-grass-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-grass-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-left.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-mid.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-mushroom1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-mushroom2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-right.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-seesaw--bar.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-seesaw-base.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-spike-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-spike-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-stone-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-stone-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-stone-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-stone-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-stone-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-tree-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-tree-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-tree-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-tree-platform-1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-tree-platform-2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-vine-a.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-vine-b.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-vine-c.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-water.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/ground/g-wooden-bridge.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/weather/rain/frame1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/weather/rain/frame2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/weather/rain/frame3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/weather/snow/frame-3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/weather/snow/frame-4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/weather/snow/frame-5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/weather/snow/frame1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/level/weather/snow/frame2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z10.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z11.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z12.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z13.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z14.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z15.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z16.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z6.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z7.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z8.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/assets/zombies/z9.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/phaser.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/SpineContainer.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/SpineFile.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/SpineGameObject.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/SpinePlugin.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/matter.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/phaser.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/spine-canvas.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/spine-webgl.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/types/spine.d.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tableau1.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main1.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Nouveau document texte.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/new/neige7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tableau1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tableau1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -145,7 +24,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../halloween" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../halloween-master" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -160,11 +39,38 @@
       <workItem from="1639921493912" duration="4084000" />
       <workItem from="1639929580905" duration="2911000" />
       <workItem from="1639934882103" duration="9846000" />
+      <workItem from="1639997490663" duration="6049000" />
     </task>
+    <task id="LOCAL-00001" summary="azerzer">
+      <created>1639998031208</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1639998031208</updated>
+    </task>
+    <task id="LOCAL-00002" summary="azerzer">
+      <created>1639998044461</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1639998044461</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="azerzer" />

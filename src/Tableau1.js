@@ -19,17 +19,18 @@ class Tableau1 extends Phaser.Scene{
         // background
         this.load.image('fond', 'assets/fond.jpg');
         // éléments rajoué
+
         for(let i=1;i<=3;i++){
             this.load.image('caillou'+i, 'assets/new/caillou'+i+'.png');
         }
         this.load.image('maison', 'assets/new/maison2.png');
 
         for(let i=1;i<=2;i++){
-            this.load.image('arbreMort-'+i, 'assets/weather/snow/arbreMort'+i+'.png');
+            this.load.image('arbreMort'+i, 'assets/new/arbreMort'+i+'.png');
         }
 
         // éléments de neige
-        for(let i=1;i<=7;i++){
+        for(let i=1;i<7;i++){
             this.load.image('neige'+i, 'assets/new/neige'+i+'.png');
         }
         this.load.image('neigeMaison', 'assets/new/neigeMaison.png');
@@ -49,7 +50,11 @@ class Tableau1 extends Phaser.Scene{
          * Fond
          * @type {Phaser.GameObjects.Sprite}
          */
-        let fond=this.add.image(0,0, 'fond').setOrigin(0,0);
+        // fond
+
+        this.add.image(0,0, 'fond').setOrigin(0,0);
+
+       this.initKeyboard()
 
 
 
@@ -86,15 +91,27 @@ class Tableau1 extends Phaser.Scene{
          */
         let bg1Terrain3=this.add.image(-300,200, 'bg1-terrain-3').setOrigin(0,0);
         this.bg1Container.add(bg1Terrain3);
+
+
         // arbre
+        let arbreMort1_1=this.add.image(85,160, 'arbreMort1').setOrigin(0,0);
+        arbreMort1_1.scale=0.5
+        let arbreMort1_2=this.add.image(415,120, 'arbreMort1').setOrigin(0,0);
+        arbreMort1_2.scale=0.5
+
+        let arbreMort2_1=this.add.image(190,10, 'arbreMort2').setOrigin(0,0);
+        arbreMort2_1.scale=0.5
+        let arbreMort2_2=this.add.image(390,160, 'arbreMort2').setOrigin(0,0);
+        arbreMort2_2.scale=0.5
+
 
 
 
         //neige
 
-        let neige7_1=this.add.image(270,80, 'neige7').setOrigin(0,0);
+        let neige7_1=this.add.image(270,80, 'neige6').setOrigin(0,0);
         neige7_1.scale=0.5
-        let neige7_2=this.add.image(300,185, 'neige7').setOrigin(0,0);
+        let neige7_2=this.add.image(300,185, 'neige6').setOrigin(0,0);
         neige7_2.scale=0.5
 
         let neige3_1=this.add.image(376,114, 'neige3').setOrigin(0,0);
@@ -138,6 +155,8 @@ class Tableau1 extends Phaser.Scene{
 
         let neigeMaison=this.add.image(135,-3, 'neigeMaison').setOrigin(0,0);
         neigeMaison.scale=0.6
+
+
         // pierre
         let caillou1_1=this.add.image(120,100, 'caillou1').setOrigin(0,0);
         caillou1_1.scale=0.5
@@ -218,7 +237,7 @@ class Tableau1 extends Phaser.Scene{
          * @type {Phaser.GameObjects.Sprite}
          */
 
-        let neigeEffet=this.add.image(100,95, 'neigeEffet').setOrigin(0,0);
+        //let neigeEffet=this.add.image(100,95, 'neigeEffet').setOrigin(0,0);
 
 
 
@@ -253,52 +272,45 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1 // -1 correspond a l'infini
         });
         this.filterNeige.play('snow');
-
-
-        //
-
-
-
-        bgAnimationA.scrollFactorX=0;
+        this.filterNeige.visible=false;
         this.filterFilm.scrollFactorX=0;
         this.bg2Container.scrollFactorX=0.2;
         this.bg1Container.scrollFactorX=0.4;
         this.groundContainer.scrollFactorX=1;
 
-    }
-    /**
-     * Définit ce qui se passe quand on appuie ou relache une touche du clavier
-     * ALGO : ceci est une fonction ou méthode
-     */
-    initKeyboard(){
-        let me=this;
-        this.input.keyboard.on('keydown', function(kevent)
-        {
-            switch (kevent.keyCode)
-            {
 
-                case Phaser.Input.Keyboard.KeyCodes.n:
-                    me.filterNeige.visible=false;
-                    break;
-
-
-
-            }
-        });
-        this.input.keyboard.on('keyup', function(kevent)
-        {
-            switch (kevent.keyCode)
-            {
-
-
-            }
-        });
     }
 
+   initKeyboard(){
+       let me=this;
+       this.input.keyboard.on('keydown', function(kevent)
+       {
+           switch (kevent.keyCode)
+           {
+               case Phaser.Input.Keyboard.KeyCodes.I:
+
+                   if (me.filterNeige.visible === true) {
+                       me.filterNeige.setVisible(false)
+                   } else {
+                       me.filterNeige.setVisible(true)
+                   }
+                   break;
+           }
+
+       });
+       this.input.keyboard.on('keyup', function(kevent)
+       {
+           switch (kevent.keyCode)
+           {
+
+           }
+       });
+   }
     /**
      * Cette fonction s'exécute en boucle (à peu près 60 fois par secondes)
      */
     update(){
+
         //déplacement de la caméra
         this.cameras.main.scrollX+=this.speed; // on aurait pu écrire : this.cameras.main.scrollX= this.cameras.main.scrollX + this.speed;
 
