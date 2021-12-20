@@ -1,8 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="6d6482fb-021a-4a3f-bbd4-e4d5c9c50e21" name="Changes" comment="azerzer">
+    <list default="true" id="6d6482fb-021a-4a3f-bbd4-e4d5c9c50e21" name="Changes" comment="azza">
+      <change afterPath="$PROJECT_DIR$/assets/music.mp3" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/new/arbeNeige.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/new/caverneNeige.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/new/neigeEffet.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/new/neigePlaque.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Tableau1.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tableau1.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,7 +43,7 @@
       <workItem from="1639921493912" duration="4084000" />
       <workItem from="1639929580905" duration="2911000" />
       <workItem from="1639934882103" duration="9846000" />
-      <workItem from="1639997490663" duration="12194000" />
+      <workItem from="1639997490663" duration="16975000" />
     </task>
     <task id="LOCAL-00001" summary="azerzer">
       <created>1639998031208</created>
@@ -61,7 +66,14 @@
       <option name="project" value="LOCAL" />
       <updated>1640005759538</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="azza">
+      <created>1640012279390</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1640012279390</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -80,6 +92,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="azerzer" />
-    <option name="LAST_COMMIT_MESSAGE" value="azerzer" />
+    <MESSAGE value="azza" />
+    <option name="LAST_COMMIT_MESSAGE" value="azza" />
   </component>
 </project>

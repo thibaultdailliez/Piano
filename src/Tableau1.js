@@ -41,6 +41,8 @@ class Tableau1 extends Phaser.Scene{
         }
         this.load.image('neigeEffet', 'assets/new/neigeEffet.png');
 
+        this.load.audio('music', 'assets/music.mp3')
+
     }
 
     /**
@@ -56,7 +58,8 @@ class Tableau1 extends Phaser.Scene{
 
         this.add.image(0,0, 'fond').setOrigin(0,0);
 
-       this.initKeyboard()
+        this.initKeyboard()
+
 
 
 
@@ -204,6 +207,13 @@ class Tableau1 extends Phaser.Scene{
         this.caillou2_4.scale=0.5
         this.caillou3_4=this.add.image(420,80, 'caillou3').setOrigin(0,0);
         this.caillou3_4.scale=0.5
+
+
+
+
+
+
+
 
 
 
