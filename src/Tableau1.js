@@ -3,8 +3,6 @@
  * Vous verrez ça plus tard en détail avec Rémi, pour l'instant on n'a pas trop besoin de savoir à quoi ça sert.
  */
 class Tableau1 extends Phaser.Scene{
-
-
     /**
      * Précharge les assets
      */
@@ -41,8 +39,6 @@ class Tableau1 extends Phaser.Scene{
         }
         this.load.image('neigeEffet', 'assets/new/neigeEffet.png');
 
-        this.load.audio('music', 'assets/music.mp3')
-
     }
 
     /**
@@ -58,8 +54,7 @@ class Tableau1 extends Phaser.Scene{
 
         this.add.image(0,0, 'fond').setOrigin(0,0);
 
-        this.initKeyboard()
-
+       this.initKeyboard()
 
 
 
@@ -77,7 +72,6 @@ class Tableau1 extends Phaser.Scene{
         let maison=this.add.image(135,-3, 'maison').setOrigin(0,0);
         this.bg2Container.add(maison);
         maison.scale=0.6
-
         /**
          * Arbre dans bg2
          * @type {Phaser.GameObjects.Image}
@@ -99,121 +93,102 @@ class Tableau1 extends Phaser.Scene{
         this.bg1Container.add(bg1Terrain3);
 
 
-        // arbre statique
-        this.arbreMort1_1=this.add.image(85,160, 'arbreMort1').setOrigin(0,0);
-        this.arbreMort1_1.scale=0.5
-        this.arbreMort1_2=this.add.image(415,120, 'arbreMort1').setOrigin(0,0);
-        this.arbreMort1_2.scale=0.5
+        // arbre
+        let arbreMort1_1=this.add.image(85,160, 'arbreMort1').setOrigin(0,0);
+        arbreMort1_1.scale=0.5
+        let arbreMort1_2=this.add.image(415,120, 'arbreMort1').setOrigin(0,0);
+        arbreMort1_2.scale=0.5
 
-        this.arbreMort2_1=this.add.image(190,10, 'arbreMort2').setOrigin(0,0);
-        this.arbreMort2_1.scale=0.5
-        this.arbreMort2_2=this.add.image(390,160, 'arbreMort2').setOrigin(0,0);
-        this.arbreMort2_2.scale=0.5
+        let arbreMort2_1=this.add.image(190,10, 'arbreMort2').setOrigin(0,0);
+        arbreMort2_1.scale=0.5
+        let arbreMort2_2=this.add.image(390,160, 'arbreMort2').setOrigin(0,0);
+        arbreMort2_2.scale=0.5
 
 
 
 
         //neige
 
-        this.neige6_1=this.add.image(270,80, 'neige6').setOrigin(0,0);
-        this.neige6_1.scale=0.5
-        this.neige6_2=this.add.image(300,185, 'neige6').setOrigin(0,0);
-        this.neige6_2.scale=0.5
+        let neige7_1=this.add.image(270,80, 'neige6').setOrigin(0,0);
+        neige7_1.scale=0.5
+        let neige7_2=this.add.image(300,185, 'neige6').setOrigin(0,0);
+        neige7_2.scale=0.5
 
-        this.neige3_1=this.add.image(376,114, 'neige3').setOrigin(0,0);
-        this.neige3_1.scale=0.5
-        this.neige3_2=this.add.image(360,4, 'neige3').setOrigin(0,0);
-        this.neige3_2.scale=0.5
-        this.neige3_3=this.add.image(399,-1, 'neige3').setOrigin(0,0);
-        this.neige3_3.scale=0.5
+        let neige3_1=this.add.image(376,114, 'neige3').setOrigin(0,0);
+        neige3_1.scale=0.5
+        let neige3_2=this.add.image(360,4, 'neige3').setOrigin(0,0);
+        neige3_2.scale=0.5
+        let neige3_3=this.add.image(399,-1, 'neige3').setOrigin(0,0);
+        neige3_3.scale=0.5
 
-        this.neige4_1=this.add.image(454,133, 'neige4').setOrigin(0,0);
-        this.neige4_1.scale=0.5
-        this.neige4_2=this.add.image(336,43, 'neige4').setOrigin(0,0);
-        this.neige4_2.scale=0.5
-        this.neige4_3=this.add.image(5,36, 'neige4').setOrigin(0,0);
-        this.neige4_3.scale=0.5
+        let neige4_1=this.add.image(454,133, 'neige4').setOrigin(0,0);
+        neige4_1.scale=0.5
+        let neige4_2=this.add.image(336,43, 'neige4').setOrigin(0,0);
+        neige4_2.scale=0.5
+        let neige4_3=this.add.image(5,36, 'neige4').setOrigin(0,0);
+        neige4_3.scale=0.5
 
-        this.neige5_1=this.add.image(410,52, 'neige5').setOrigin(0,0);
-        this.neige5_1.scale=0.5
-        this.neige5_2=this.add.image(322,0, 'neige5').setOrigin(0,0);
-        this.neige5_2.scale=0.5
-        this.neige5_3=this.add.image(13,95, 'neige5').setOrigin(0,0);
-        this.neige5_3.scale=0.5
+        let neige5_1=this.add.image(410,52, 'neige5').setOrigin(0,0);
+        neige5_1.scale=0.5
+        let neige5_2=this.add.image(322,0, 'neige5').setOrigin(0,0);
+        neige5_2.scale=0.5
+        let neige5_3=this.add.image(13,95, 'neige5').setOrigin(0,0);
+        neige5_3.scale=0.5
 
-        this.neige1_1=this.add.image(78,100, 'neige1').setOrigin(0,0);
-        this.neige1_1.scale=0.5
-        this.neige1_2=this.add.image(50,66, 'neige1').setOrigin(0,0);
-        this.neige1_2.scale=0.5
-        this.neige1_3=this.add.image(233,5, 'neige1').setOrigin(0,0);
-        this.neige1_3.scale=0.5
+        let neige1_1=this.add.image(78,100, 'neige1').setOrigin(0,0);
+        neige1_1.scale=0.5
+        let neige1_2=this.add.image(50,66, 'neige1').setOrigin(0,0);
+        neige1_2.scale=0.5
+        let neige1_3=this.add.image(233,5, 'neige1').setOrigin(0,0);
+        neige1_3.scale=0.5
 
-        this.neige2_1=this.add.image(212,175, 'neige2').setOrigin(0,0);
-        this.neige2_1.scale=0.5
-        this.neige2_2=this.add.image(189,235, 'neige2').setOrigin(0,0);
-        this.neige2_2.scale=0.5
-        this.neige2_3=this.add.image(440,300, 'neige2').setOrigin(0,0);
-        this.neige2_3.scale=0.5
-
-
-
-        //maison statique
-
-        this.neigeMaison=this.add.image(135,-3, 'neigeMaison').setOrigin(0,0);
-        this.neigeMaison.scale=0.6
-        this.neigeMaison.alpha=0;
+        let neige2_1=this.add.image(212,175, 'neige2').setOrigin(0,0);
+        neige2_1.scale=0.5
+        let neige2_2=this.add.image(189,235, 'neige2').setOrigin(0,0);
+        neige2_2.scale=0.5
+        let neige2_3=this.add.image(440,300, 'neige2').setOrigin(0,0);
+        neige2_3.scale=0.5
 
 
 
-        // pierre statique
-        this.caillou1_1=this.add.image(120,100, 'caillou1').setOrigin(0,0);
-        this.caillou1_1.scale=0.5
-        this.caillou1_2=this.add.image(115,110, 'caillou1').setOrigin(0,0);
-        this.caillou1_2.scale=0.5
+        //maison
 
-        this.caillou1_3=this.add.image(300,110, 'caillou1').setOrigin(0,0);
-        this.caillou1_3.scale=0.5
-        this.caillou1_4=this.add.image(300,60, 'caillou1').setOrigin(0,0);
-        this.caillou1_4.scale=0.5
+        let neigeMaison=this.add.image(135,-3, 'neigeMaison').setOrigin(0,0);
+        neigeMaison.scale=0.6
 
-        this.caillou1_5=this.add.image(56,200, 'caillou1').setOrigin(0,0);
-        this.caillou1_5.scale=0.5
-        this.caillou1_6=this.add.image(56,207, 'caillou1').setOrigin(0,0);
-        this.caillou1_6.scale=0.5
 
-        this.caillou1_7=this.add.image(440,120, 'caillou1').setOrigin(0,0);
-        this.caillou1_7.scale=0.5
-        this.caillou1_8=this.add.image(420,80, 'caillou1').setOrigin(0,0);
-        this.caillou1_8.scale=0.5
+        // pierre
+        let caillou1_1=this.add.image(120,100, 'caillou1').setOrigin(0,0);
+        caillou1_1.scale=0.5
+        let caillou1_2=this.add.image(115,110, 'caillou1').setOrigin(0,0);
+        caillou1_2.scale=0.5
+
+        let caillou1_3=this.add.image(300,110, 'caillou1').setOrigin(0,0);
+        caillou1_3.scale=0.5
+        let caillou1_4=this.add.image(300,60, 'caillou1').setOrigin(0,0);
+        caillou1_4.scale=0.5
+
+        let caillou1_5=this.add.image(56,200, 'caillou1').setOrigin(0,0);
+        caillou1_5.scale=0.5
+        let caillou1_6=this.add.image(56,207, 'caillou1').setOrigin(0,0);
+        caillou1_6.scale=0.5
+
+        let caillou1_7=this.add.image(440,120, 'caillou1').setOrigin(0,0);
+        caillou1_7.scale=0.5
+        let caillou1_8=this.add.image(420,80, 'caillou1').setOrigin(0,0);
+        caillou1_8.scale=0.5
 
         // pierre + neige
 
-        this.caillou2_1=this.add.image(120,100, 'caillou2').setOrigin(0,0);
-        this.caillou2_1.scale=0.5
-        this.caillou3_1=this.add.image(115,110, 'caillou3').setOrigin(0,0);
-        this.caillou3_1.scale=0.5
+        let caillou2_1=this.add.image(120,100, 'caillou2').setOrigin(0,0);
+        caillou2_1.scale=0.5
+        let caillou3_1=this.add.image(115,110, 'caillou3').setOrigin(0,0);
+        caillou3_1.scale=0.5
 
-        this.caillou2_2=this.add.image(300,110, 'caillou2').setOrigin(0,0);
-        this.caillou2_2.scale=0.5
-        this.caillou3_2=this.add.image(300,60, 'caillou3').setOrigin(0,0);
-        this.caillou3_2.scale=0.5
-
-        this.caillou2_3=this.add.image(56,200, 'caillou2').setOrigin(0,0);
-        this.caillou2_3.scale=0.5
-        this.caillou3_3=this.add.image(56,207, 'caillou3').setOrigin(0,0);
-        this.caillou3_3.scale=0.5
-
-        this.caillou2_4=this.add.image(440,120, 'caillou2').setOrigin(0,0);
-        this.caillou2_4.scale=0.5
-        this.caillou3_4=this.add.image(420,80, 'caillou3').setOrigin(0,0);
-        this.caillou3_4.scale=0.5
-
-
-
-
-
-
-
+        let caillou2_2=this.add.image(300,110, 'caillou2').setOrigin(0,0);
+        caillou2_2.scale=0.5
+        let caillou3_2=this.add.image(300,60, 'caillou3').setOrigin(0,0);
+        caillou3_2.scale=0.5
 
 
 
@@ -297,53 +272,11 @@ class Tableau1 extends Phaser.Scene{
             repeat: -1 // -1 correspond a l'infini
         });
         this.filterNeige.play('snow');
-
-
-        //on cache les éléments
-
-
-        // neige filtre plus maison
-
-        this.filterNeige.alpha=0;
-        this.neigeMaison.alpha=0;
-
-        // neige arbre
-        this.neige1_1.alpha=0;
-        this.neige1_2.alpha=0;
-        this.neige1_3.alpha=0;
-        this.neige2_1.alpha=0;
-        this.neige2_2.alpha=0;
-        this.neige2_3.alpha=0;
-        this.neige3_1.alpha=0;
-        this.neige3_2.alpha=0;
-        this.neige3_3.alpha=0;
-        this.neige4_1.alpha=0;
-        this.neige4_2.alpha=0;
-        this.neige4_3.alpha=0;
-        this.neige5_1.alpha=0;
-        this.neige5_2.alpha=0;
-        this.neige5_3.alpha=0;
-        this.neige6_1.alpha=0;
-        this.neige6_2.alpha=0;
-
-        // neige cailloux
-
-        this.caillou2_1.alpha=0;
-        this.caillou3_1.alpha=0;
-
-        this.caillou2_2.alpha=0;
-        this.caillou3_2.alpha=0;
-
-        this.caillou2_3.alpha=0;
-        this.caillou3_3.alpha=0;
-
-        this.caillou2_4.alpha=0;
-        this.caillou3_4.alpha=0;
-
-
-
-
-
+        this.filterNeige.visible=false;
+        this.filterFilm.scrollFactorX=0;
+        this.bg2Container.scrollFactorX=0.2;
+        this.bg1Container.scrollFactorX=0.4;
+        this.groundContainer.scrollFactorX=1;
 
 
     }
@@ -354,148 +287,14 @@ class Tableau1 extends Phaser.Scene{
        {
            switch (kevent.keyCode)
            {
-               case Phaser.Input.Keyboard.KeyCodes.A:
-
-                   if (me.filterNeige.alpha === 0) {
-                       me.filterNeige.setAlpha(1)
-                   } else {
-                       me.filterNeige.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.Z:
-
-                   if (me.neigeMaison.alpha === 0) {
-                       me.neigeMaison.setAlpha(1)
-                   } else {
-                       me.neigeMaison.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.E:
-
-                   if (me.neige6_1.alpha === 0) {
-                       me.neige6_1.setAlpha(1)
-                       me.neige6_2.setAlpha(1)
-                   } else {
-                       me.neige6_1.setAlpha(0)
-                       me.neige6_2.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.R:
-
-                   if (me.neige3_1.alpha === 0) {
-                       me.neige3_1.setAlpha(1)
-                       me.neige3_2.setAlpha(1)
-                       me.neige3_3.setAlpha(1)
-                   } else {
-                       me.neige3_1.setAlpha(0)
-                       me.neige3_2.setAlpha(0)
-                       me.neige3_3.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.T:
-
-                   if (me.neige4_1.alpha === 0) {
-                       me.neige4_1.setAlpha(1)
-                       me.neige4_2.setAlpha(1)
-                       me.neige4_3.setAlpha(1)
-                   } else {
-                       me.neige4_1.setAlpha(0)
-                       me.neige4_2.setAlpha(0)
-                       me.neige4_3.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.Y:
-
-                   if (me.neige5_1.alpha === 0) {
-                       me.neige5_1.setAlpha(1)
-                       me.neige5_2.setAlpha(1)
-                       me.neige5_3.setAlpha(1)
-                   } else {
-                       me.neige5_1.setAlpha(0)
-                       me.neige5_2.setAlpha(0)
-                       me.neige5_3.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.U:
-
-                   if (me.neige1_1.alpha === 0) {
-                       me.neige1_1.setAlpha(1)
-                       me.neige1_2.setAlpha(1)
-                       me.neige1_3.setAlpha(1)
-                   } else {
-                       me.neige1_1.setAlpha(0)
-                       me.neige1_2.setAlpha(0)
-                       me.neige1_3.setAlpha(0)
-                   }
-                   break;
-
                case Phaser.Input.Keyboard.KeyCodes.I:
 
-                   if (me.neige2_1.alpha === 0) {
-                       me.neige2_1.setAlpha(1)
-                       me.neige2_2.setAlpha(1)
-                       me.neige2_3.setAlpha(1)
+                   if (me.filterNeige.visible === true) {
+                       me.filterNeige.setVisible(false)
                    } else {
-                       me.neige2_1.setAlpha(0)
-                       me.neige2_2.setAlpha(0)
-                       me.neige2_3.setAlpha(0)
+                       me.filterNeige.setVisible(true)
                    }
                    break;
-
-                   // Pierre + neige
-
-               case Phaser.Input.Keyboard.KeyCodes.Q:
-
-                   if (me.caillou2_1.alpha === 0) {
-                       me.caillou2_1.setAlpha(1)
-                       me.caillou3_1.setAlpha(1)
-                   } else {
-                       me.caillou2_1.setAlpha(0)
-                       me.caillou3_1.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.S:
-
-                   if (me.caillou2_2.alpha === 0) {
-                       me.caillou2_2.setAlpha(1)
-                       me.caillou3_2.setAlpha(1)
-                   } else {
-                       me.caillou2_2.setAlpha(0)
-                       me.caillou3_2.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.D:
-
-                   if (me.caillou2_3.alpha === 0) {
-                       me.caillou2_3.setAlpha(1)
-                       me.caillou3_3.setAlpha(1)
-                   } else {
-                       me.caillou2_3.setAlpha(0)
-                       me.caillou3_3.setAlpha(0)
-                   }
-                   break;
-
-               case Phaser.Input.Keyboard.KeyCodes.F:
-
-                   if (me.caillou2_4.alpha === 0) {
-                       me.caillou2_4.setAlpha(1)
-                       me.caillou3_4.setAlpha(1)
-                   } else {
-                       me.caillou2_4.setAlpha(0)
-                       me.caillou3_4.setAlpha(0)
-                   }
-                   break;
-
-
-
            }
 
        });
@@ -512,7 +311,8 @@ class Tableau1 extends Phaser.Scene{
      */
     update(){
 
-
+        //déplacement de la caméra
+        this.cameras.main.scrollX+=this.speed; // on aurait pu écrire : this.cameras.main.scrollX= this.cameras.main.scrollX + this.speed;
 
         //petit effet de vibrance sur le filtre film au tout premier plan
         this.filterFilm.setAlpha(Phaser.Math.Between(95,100)/100)
